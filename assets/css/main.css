@@ -1,0 +1,365 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#ff6533,#f53f2d);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item, .header__navbar-item-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header__navbar-item--strong {
+    font-weight: 500;
+}
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background-color: #FB9086;
+    right: -9px;
+    top: 1px;
+}
+
+.header__navbar-icon-link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.header__navbar-item, .header__navbar-item-link, .header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-item:hover, .header__navbar-item-link:hover, .header__navbar-icon-link:hover {
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);    
+}
+
+.header__navbar-item--no-pointer{
+    cursor: text;
+    color: rgba(255,255,255,1);
+    
+}
+
+/*Header QR Code*/
+.header__qr {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 186px;
+    background-color: var(--white-color);
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease 0.5s;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__qr-download-img {
+    height: 16px;
+}
+
+.header__qr-link:nth-child(1) {
+    margin-left: 10px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 10px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr{
+    display:inline;
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+/*Header Notify*/
+.header__notify {
+    background-color: var(--white-color);
+    width: 404px;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    border: solid 1px #D3D3D3;
+    cursor: default;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: 90% top;
+    display: none;
+    will-change: opacity, transform;
+    
+}
+
+.header__notify::before {
+    content: "";
+    border: solid;
+    border-width: 10px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.header__notify::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+}
+
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify-header {
+    background-color: #fff;    
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header__notify-header h3 {
+    color: rgba(0,0,0,0.26);
+    margin: 0px 10px 0px 10px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0;
+    line-height: 40px;  
+    user-select: none;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+.header__notify-item--viewed {
+    background-color: rgba(246,63,46,0.15);
+}
+
+.header__notify-link {
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.header__notify-name {
+    color: rgba(0,0,0,0.8);
+    font-size: 1.2rem;
+    font-weight: 200px;
+}
+
+.header__notify-description {
+    color: rgba(0,0,0,0.54);
+    font-size: 1rem;
+}
+
+.header__notify-footer{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.header__notify-footer-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #666363;
+    margin: auto;
+}
+
+.header__notify-footer:hover {
+   background-color: #f7f7f7;
+}
+
+
+/*Authen*/
+.auth-form {
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.auth-form__heading {
+    font-size: 2rem;
+    color: #222;
+    font-weight: 500;
+    cursor: default;
+}
+
+.auth-form__switch-btn {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.auth-form__form {
+    
+}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    color: #222;
+    border: 1px solid var(--boder-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #777;
+}
+
+.auth-form__aside {
+    margin-top: 20px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 12px;
+}
+
+.auth-form__text-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__controls {
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__controls button:nth-child(1) {
+    margin-right: 10px;
+}
+
+.auth-form__socials {
+    background-color: #f1f0f0;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.auth-form__socials-icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__socials a:nth-child(1) .auth-form__socials-icon {
+    color: var(--white-color);
+
+}
+
+.auth-form__socials a:nth-child(1) {
+    background-color: #3A5A98;
+    color: var(--white-color);
+}
+
+.auth-form__socials-title {
+    margin: 0 32px;
+}
+
+.auth-form__socials a:nth-child(2) {
+    background-color: var(--white-color);
+    color: #666;
+}
+
+.btn--with-icon {
+
+}
+
+
