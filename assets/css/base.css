@@ -59,7 +59,7 @@ html {
 
 /*Button style*/
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 36px;    
     text-decoration: none;
     border: none;
@@ -80,6 +80,7 @@ html {
 .btn.btn--normal:hover {
     background-color: rgba(0,0,0,0.1);
 }
+
 .btn.btn--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
