@@ -619,7 +619,7 @@
 }
 
 .header__cart-view-cart {
-    margin: 12px 5px 12px auto;
+    margin: 0 5px 12px auto;
 }
 
 .header__cart-view-cart:hover {
