@@ -154,6 +154,8 @@
 
 .header__navbar-item--has-notify:hover .header__notify {
     display: block;
+    position: absolute;
+    z-index: 1;
 }
 
 @keyframes headerNotifyGrowth {
