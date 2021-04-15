@@ -1010,9 +1010,12 @@
     height: 36px;
     width: 36px;
     border-radius: 3px;
-    border: solid 0.5px #DADADA;
     text-align: center;
     line-height: 36px;
+}
+
+.home-paging-control-link:first-child {
+    border-right: solid 1px #EEE;
 }
 
 .home-selectsort-price-icon {
