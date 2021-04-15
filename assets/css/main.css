@@ -949,12 +949,17 @@
     display: flex;
     background-color: var(--white-color);
     width: 216px;
-    height: 100%;
+    height: 36px;
     align-items: center;
     justify-content: space-between;
     margin-left: 10px;
     padding: 0 10px 0 10px;
     border-radius: 2px;
+    position: relative;
+}
+.home-selectsort-price:hover .home-selectsort-price-list{
+    display: block;
+    cursor: pointer;
 }
 
 .home-selectsort-price-title {
@@ -975,28 +980,78 @@
 }
 
 .home-paging-number {
-
+    display: flex;
+    align-items: center;
+    font-weight: 500;
 }
 
 .current-page {
-
+    color: var(--primary-color);
+    font-size: 1.4rem;
 }
 
 .total-page {
-
+    color: var(--text-color);
+    font-size: 1.4rem;
 }
 
 .home-paging-control {
-
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .home-paging-control-link {
-
+    color: var(--text-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--white-color);
+    height: 36px;
+    width: 36px;
+    border-radius: 3px;
+    border: solid 0.5px #DADADA;
+    text-align: center;
+    line-height: 36px;
 }
 
 .home-selectsort-price-icon {
 
 }
+
+.home-selectsort-price-list {
+    width: 100%;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    border-top: 1px solid #DADADA;
+    display: none;
+}
+
+.home-selectsort-price-list-item {
+   padding: 10px 15px;
+   display: flex;
+   align-items: center;
+}   
+
+.home-selectsort-price-list-item-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.home-selectsort-price-list-item:hover .home-selectsort-price-list-item-link {
+    color: var(--primary-color);
+}
+
 
 
 
