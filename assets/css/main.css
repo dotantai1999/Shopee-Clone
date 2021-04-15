@@ -854,6 +854,150 @@
     display: block;
 }
 
+/*Container*/
+.container {
+    background-color: #F5F5F5;
+}
+
+.app-container{
+    padding-top: 30px;
+}
+
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.category__heading {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+}
+
+.category__heading-title {
+    font-size: 1.4rem;
+    
+}
+
+.category__heading-icon {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.category-list {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.category-item{
+    padding: 10px 10px;
+}
+
+.category-item--active .category-item__link{
+    color: var(--primary-color);
+}
+
+.category-item--active .category-item__link:before {
+    content: "";
+    border-style: solid;
+    border-width: 4px 4px;
+    border-color: transparent transparent transparent var(--primary-color);
+    position: absolute;
+    top: 4px;
+    right: 100%;
+}
+
+.category-item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+    right: 0;
+    transition: right linear 0.1s;
+}
+
+.category-item__link:hover {
+    color: var(--primary-color);
+    right: -4px;
+}
+
+/*Home-filter*/
+.home-filter {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+}
+
+.home-filter .btn + .btn {
+    margin-left: 10px;
+}
+.home-filter-title {
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 10px;
+}
+
+.home-selectsort-price {
+    display: flex;
+    background-color: var(--white-color);
+    width: 216px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding: 0 10px 0 10px;
+    border-radius: 2px;
+}
+
+.home-selectsort-price-title {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.home-selectsort-price-icon {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.home-paging {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    height: 100%;
+}
+
+.home-paging-number {
+
+}
+
+.current-page {
+
+}
+
+.total-page {
+
+}
+
+.home-paging-control {
+
+}
+
+.home-paging-control-link {
+
+}
+
+.home-selectsort-price-icon {
+
+}
+
 
 
 
