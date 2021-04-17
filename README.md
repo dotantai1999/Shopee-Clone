@@ -10,8 +10,8 @@
 - Body (List Product, Pagination)
 - Footer
 ## App
-Link Website: https://shopee-clone-dtt.netlify.app/
-Link Video Demo:
+- Link Website: https://shopee-clone-dtt.netlify.app/
+- Link Video Demo:
 ## Screenshot
 
  
