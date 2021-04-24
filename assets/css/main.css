@@ -535,6 +535,8 @@
 }
 
 
+
+
 .header__logo {
     width: 200px;
 }
@@ -551,6 +553,12 @@
     display: flex;
     align-items: center;
 }
+
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
+}
+
 
 .header__search-input-wrap {
     flex: 1;
