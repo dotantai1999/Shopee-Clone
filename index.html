@@ -182,16 +182,23 @@
                   Trợ giúp
                 </a>
               </li>
-              <!-- <li
+              <li
                 class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
+                id="sign-up"
               >
                 Đăng kí
               </li>
-              <li class="header__navbar-item header__navbar-item--strong">
+              <li
+                class="header__navbar-item header__navbar-item--strong"
+                id="sign-in"
+              >
                 Đăng nhập
-              </li> -->
+              </li>
 
-              <li class="header__navbar-item header__navbar-user">
+              <li
+                class="header__navbar-item header__navbar-user"
+                id="header__navbar-user"
+              >
                 <img
                   src="https://randomuser.me/api/portraits/women/66.jpg"
                   alt=""
@@ -1678,11 +1685,11 @@
     </div>
 
     <!--Modal layout-->
-    <!-- <div class="modal"> -->
-    <!-- <div class="modal__overlay"></div> -->
-    <!-- <div class="modal__body"> -->
-    <!--Register Form-->
-    <!-- <div class="auth-form">
+    <div class="modal" id="modal-sign-up">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <!--Register Form-->
+        <div class="auth-form">
           <div class="container">
             <div class="auth-form__header">
               <h3 class="auth-form__heading">Đăng kí</h3>
@@ -1723,7 +1730,7 @@
             </div>
 
             <div class="auth-form__controls">
-              <button class="btn btn--normal">TRỞ LẠI</button>
+              <button class="btn btn--normal" id="back-button">TRỞ LẠI</button>
               <button class="btn btn--primary">ĐĂNG KÍ</button>
             </div>
           </div>
@@ -1741,10 +1748,15 @@
               <span class="auth-form__socials-title"> Kết nối với google </span>
             </a>
           </div>
-        </div> -->
+        </div>
+      </div>
+    </div>
 
-    <!--Login Form-->
-    <!-- <div class="auth-form">
+    <div class="modal" id="modal-sign-in">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <!--Login Form-->
+        <div class="auth-form">
           <div class="container">
             <div class="auth-form__header">
               <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -1777,8 +1789,12 @@
             </div>
 
             <div class="auth-form__controls">
-              <button class="btn btn--normal">TRỞ LẠI</button>
-              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+              <button class="btn btn--normal" id="back-button-sign-in">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary" id="btn-sign-in">
+                ĐĂNG NHẬP
+              </button>
             </div>
           </div>
 
@@ -1795,8 +1811,10 @@
               <span class="auth-form__socials-title"> Kết nối với google </span>
             </a>
           </div>
-        </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script src="/assets/js/index.js"></script>
 </html>

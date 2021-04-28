@@ -24,11 +24,10 @@
     position: relative;
 }
 
-.header__navbar-user {
-    display: flex;
+#header__navbar-user {
+    display: none;
     justify-content: center;
     align-items: center;
-
 }
 
 .header__navbar-user-img {
@@ -380,6 +379,10 @@
 }
 
 /*Authen*/
+.modal {
+    display: none;
+}
+
 .auth-form {
     width: 500px;
     border-radius: 5px;
